@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tao moi user</title>
+    <title>Sửa đổi danh mục</title>
     <link rel="stylesheet" type="text/css" href="../../../public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../../public/css/custom.css">
   </head>
@@ -28,14 +28,14 @@
         <i class="flash"><?php if(isset($_SESSION["flash"])) echo $_SESSION["flash"]; ?></i>
       </div>
       <div>
-        <h1>Chinh Sua Nguoi Dung</h1>
+        <h2>Chỉnh sửa danh mục</h2>
       </div>
       <div class="row">
-        <label>Ten nguoi dung:</label>
+        <label>Tên người dùng</label>
         <input class="form-control" type="text" name="name" value="<?php echo $name; ?>">
       </div>
       <div class="row">
-        <label>description:</label>
+        <label>Chỉnh sửa mô tả</label>
         <textarea class="form-control" name="description" value="<?php echo $description; ?>"></textarea>
       </div>
       <br>

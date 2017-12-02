@@ -7,11 +7,12 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Danh sach nguoi dung</title>
+  <title>Danh sách sản phẩm</title>
   <link rel="stylesheet" type="text/css" href="../../../public/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../../../public/css/custom.css">
 </head>
 <body>
+  <?php include "../../menucon.php" ?>
   <div class="container">
   <h2>Danh sách</h2>
   <div class="row">
@@ -20,13 +21,11 @@
   <table class="table">
     <thead>
       <tr>
-        <th>Anh</th>
-        <th>Ten san pham</th>
-        <th>Mô ta</th>
-        <th>So luong</th>
-        <th>Gia</th>
-        <th>#</th>
-        <th>#</th>
+        <th>Ảnh</th>
+        <th>Tên sản phẩm</th>
+        <th>Mô tả</th>
+        <th>Số lượng</th>
+        <th>Giá</th>
       </tr>
     </thead>
     <tbody>
@@ -52,5 +51,8 @@
     </tbody>
   </table>
 </div>
+      <script src="../../../public/js/jquery.min.js"></script>
+      <script src="../../../public/js/bootstrap.min.js"></script>
+      <script src="../../../public/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

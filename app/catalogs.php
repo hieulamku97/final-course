@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 <?php require_once "../db/mysql.php"; ?>
 <?php
-  define("URL_IMAGE", "http://localhost/doanphp/final-course/public/uploads/");
+  define("URL_IMAGE", "http://localhost/doan-php/final-course/public/uploads/");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,8 +33,8 @@
                         <h4 class="card-title">
                           <a href="#"><?php echo $row["name"];?></a>
                         </h4>
-                        <h5>$<?php echo $row["price"];?></h5>
-                        <p class="card-text"><?php echo $row["description"];?>.</p>
+                        <h5><?php echo $row["price"];?> VND</h5>
+                        <p class="card-text"><?php echo $row["description"];?></p>
                       </div>
                       <div class="card-footer">
                         <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>

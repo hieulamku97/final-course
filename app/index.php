@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 <?php require_once "../db/mysql.php"; ?>
 <?php
-  define("URL_IMAGE", "http://localhost/doanphp/final-course/public/uploads/");
+  define("URL_IMAGE", "http://localhost/doan-php/final-course/public/uploads/");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,15 +12,13 @@
 
     <!-- Navigation -->
     <?php include "menu.php" ?>
-
     <!-- Page Content -->
     <div class="container">
-
       <div class="row">
-
         <?php include "slide-left.php" ?>
         <!-- /.col-lg-3 -->
         <div class="col-lg-9">
+          <?php include "slide.php" ?>
           <div class="row">
             <?php
                 $sql = "select * from products";
@@ -33,9 +31,9 @@
                       <a href="single.php?products_id=<?php echo $row["id"];?>"><img class="card-img-top" src="<?php echo URL_IMAGE.$row['image'];?>" alt=""></a>
                       <div class="card-body">
                         <h4 class="card-title">
-                          <a href="#"><?php echo $row["name"];?></a>
+                          <a href=""><?php echo $row["name"];?></a>
                         </h4>
-                        <h5>$24.99</h5>
+                         <h5><?php echo $row["price"];?> VND</h5>
                         <p class="card-text"><?php echo $row["description"];?>.</p>
                       </div>
                       <div class="card-footer">

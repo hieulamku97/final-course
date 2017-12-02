@@ -4,13 +4,17 @@
 <meta charset="utf-8">
 <html>
 <head>
-  <title>Danh sach nguoi dung</title>
+  <title>Danh sách người dùng</title>
    <link rel="stylesheet" type="text/css" href="../../../public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../../public/css/custom.css">
 </head>
 <body>
+  <?php include "../../menucon.php" ?>
+  <br>
+  <br>
+  <br>
   <div class="container">
-  <h2>Danh sach nguoi dung</h2>
+  <h2>Danh sách người dùng</h2>
   <div class="row">
         <i class="flash"><?php if(isset($_SESSION["flash"])) echo $_SESSION["flash"]; ?></i>
       </div>
@@ -44,8 +48,8 @@
                   echo "User";
                   break;
               }; ?>
-              <td><a href="edit.php?id=<?php echo $row["id"];?>">Edit</a></td>;
-              <td><a href="delete.php?id=<?php echo $row["id"];?>">Delete</a></td>;
+              <td><a href="edit.php?id=<?php echo $row["id"];?>">Edit</a></td>
+              <td><a href="delete.php?id=<?php echo $row["id"];?>">Delete</a></td>
             </tr>
     <?php   }
         }
@@ -53,5 +57,8 @@
     </tbody>
   </table>
 </div>
+      <script src="../../../public/js/jquery.min.js"></script>
+      <script src="../../../public/js/bootstrap.min.js"></script>
+      <script src="../../../public/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

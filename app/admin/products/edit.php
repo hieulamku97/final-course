@@ -20,7 +20,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tao moi user</title>
+    <title>Chỉnh sửa người dùng</title>
     <link rel="stylesheet" type="text/css" href="../../../public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../../public/css/custom.css">
   </head>
@@ -32,10 +32,10 @@
         <i class="flash"><?php if(isset($_SESSION["flash"])) echo $_SESSION["flash"]; ?></i>
       </div>
       <div>
-        <h1>Chinh Sua Nguoi Dung</h1>
+        <h2>Chỉnh sửa sản phẩm</h2>
       </div>
       <div class="row">
-        <label>Danh muc:</label>
+        <label>Danh mục</label>
         <select class="form-control" name="catalog_id">
           <?php
             $sql = "select * from catalogs";
@@ -49,28 +49,28 @@
         </select>
       </div>
       <div class="row">
-        <label>Ten nguoi dung:</label>
+        <label>Tên sản phẩm</label>
         <input class="form-control" type="text" name="name" value="<?php echo $name; ?>">
       </div>
       <div class="row">
-        <label>description:</label>
+        <label>Mô tả</label>
         <textarea class="form-control" name="description"><?php echo $description; ?></textarea>
       </div>
       <div class="row">
-        <label>Anh:</label>
+        <label>Ảnh</label>
         <input class="form-control" type="text" name="image" value="<?php echo $image; ?>">
       </div>
       <div class="row">
-        <label>So luong:</label>
+        <label>Số Lượng</label>
         <input class="form-control" type="text" name="qty" value="<?php echo $qty; ?>">
       </div>
       <div class="row">
-        <label>Gia San Pham:</label>
+        <label>Giá sản phẩm</label>
         <input class="form-control" type="text" name="price" value="<?php echo $price; ?>">
       </div>
       <br>
       <div class="row">
-        <button class="btn btn-primary">Submit</button>
+        <button class="btn btn-primary">Xác nhận</button>
       </div>
     </form>
   </div>
